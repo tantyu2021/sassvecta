@@ -1,0 +1,48 @@
+
+main  {
+    background-color: $grey;
+}
+//2- header .container {
+//         width: 100%;
+// }
+
+footer  {
+    margin: 0; //put center
+}
+
+    // .branding {
+    //     float: left;
+    //     display: none; // _mixins - break
+    //     @include break(1000px) {
+    //         display: block;
+    //     }
+    // }
+
+    ul {
+        list-style-type: none;
+        margin-top:95px;
+        //@include clearfix;
+    }
+
+     // _mixins - break
+    ul li {
+        display:inline;
+        font-size:0.8em;
+        margin-right:10px; 
+        //@include break(760px) {
+        //     float: right;
+        // }
+       // float: right;
+    }
+
+    ul li a {
+        //font-size: 1.3rem;
+        text-decoration: none;
+        letter-spacing:-0.01em;
+        color: $red;
+
+        &:hover {
+            color: $white;
+        }
+    }
+

@@ -1,0 +1,27 @@
+
+  
+  body {
+    margin: 0;
+    font-size: 1em;
+    line-height:2em;
+    font-family: Roboto, sans-serif;
+    color: $text-color; // #022933;
+    background:url('../images/bg.gif') #FFF repeat-x;
+  }
+  
+  //1.create list of values for looping through lists with @for
+  $heading-colors: $red, $white, $grey;
+
+  h1, h2, h3 {
+      font-family: Roboto, sans-serif;
+  }
+//3. looping through the list. # represents the item
+@for $item from 1 through length($heading-colors) {
+  h#{$item} {
+    color: nth($heading-colors, $item);
+  }
+}
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }

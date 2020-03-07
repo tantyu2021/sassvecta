@@ -1,4 +1,13 @@
 
+@mixin backimage($image, $height) { 
+    background: url($image)  no-repeat 0 50px;
+   // background-repeat: no-repeat;
+    // background-position: center center;
+    // background-size: cover;
+    height: $height;
+}
+
+
 //correcting float 
 @mixin clearfix {
     &:before, &:after {

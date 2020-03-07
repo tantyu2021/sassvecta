@@ -1,43 +1,200 @@
 
 
 figure  {
-    width:400px;
-    height:190px;
-    background:url('../images/logo.png') no-repeat 0 50px;
-    float:left;display:
-    block;margin:0;
+    background-size: contain;
+    background-position:center center;
+    float:none;
+    width: inherit;
+    display: block;
+    margin:0;
+    @include backimage('../images/logo.png',100px);
+
+    @include break(459px) {
+        height:140px;
+        @include break(959px) {
+            width: 400px;
+            height: 190px;;
+            float: left;    
+        }
+    } 
 }
-footer  {
-    margin: 0; //put center
+//display: block;
+ //@include clearfix;
+
+//  figure {
+//     width: 400px;
+//     height: 190px;
+//     background: url(../images/logo.png) no-repeat 0 50px;
+//     float: left;
+//     display: block;
+//     margin: 0;
+// }
+
+main {
+    width: 300px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    @include break(459px) {
+        width: 460px;
+        @include break(757px) {
+            width: 768px;  
+        } 
+        @include break(959px) {
+            width: 940px; 
+             
+        } 
+
+    } 
+    
+    
+    // h1 {
+    //     color: $red;
+    //     font-size:2em;
+    //     font-weight:400;
+    // }
 }
 
-
-
+nav {
+    width: inherit; 
+    height: 50px;     // margin-top: 0;
+    float: none; 
+    text-align: center;
+    font-size: 0.8em;
+    @include break(959px) {
+        width: 540px;
+        height: 190px;
+        float: left;
+        text-align: right;
+    }
     ul {
         list-style-type: none;
-        margin-top:95px;
-        //@include clearfix;
-    }
-
-     // _mixins - break
-    ul li {
-        display:inline;
-        font-size:0.8em;
-        margin-right:10px; 
-        //@include break(760px) {
-        //     float: right;
-        // }
-       // float: right;
-    }
-
-    ul li a {
-        //font-size: 1.3rem;
-        text-decoration: none;
-        letter-spacing:-0.01em;
-        color: $red;
-
-        &:hover {
-            color: $white;
+        margin-top: 0;
+        margin-bottom: 40px !important;
+        display: block;
+        text-align: center;  
+        padding-left: 10px;       
+        @include clearfix;
+        @include break(959px) {
+            margin-top: 95px;
+            float: right;
+        }
+        li {
+            display: inline;
+            font-size: 1em;
+            padding-right: 15px;
+            @include break(959px) {
+                margin: 0 5px;
+                font-size: .8em;
+               // float: right;
+            }
+            a {
+                color: $red;
+                //cursor: pointer;
+                display: inline;
+                text-align: center;
+                //font-size: 1.3rem;
+                text-decoration: none;
+                //padding: 10px 5px;
+                letter-spacing: -0.01rem;       
+                &:hover {
+                    color: $white;
+                }
+              }
+            }
         }
     }
+   
+    // ul li {
+    //     @include break(760px) {
+    //         float: right;
+    //     }
+    //     padding: 10px 5px;
+    //     @include break(959px) {
+    //         width: 540px;
+    //         height: 190px;
+    //         float: left;
+    //         text-align: right;
+    //     }
+    // }
+
+    // ul li a {
+    //     font-size: 1.3rem;
+    //     text-decoration: none;
+    //     padding: 10px 5px;
+    //     color: $red;
+
+    //     &:hover {
+    //         color: $white;
+    //     }
+    // }
+
+
+// footer & {
+//     @include break(0, 500px) {
+//         display: none;
+//     }
+//     margin-top: 20px;
+//     min-height: 200px;
+//     background-color: darken($blue, 15%);
+// }    
+
+
+
+
+// nav {
+//     margin-bottom: 40px !important;
+//     margin-top: 0;
+//     float: none;
+//     text-align: center;
+//     width: inherit;
+//     height: 50px;
+//     ul {
+//         list-style-type: none;
+//         margin-top:0;
+//         display: inline-block;
+//         li  {
+//                 text-decoration: none;
+//                 display: inline-block;
+//                 letter-spacing:-0.01em;
+//                 a{
+//                     color: $red;
+//                 &:hover {
+//                     color: $white;
+//         } 
+
+//                 } 
+//     }
+//      ul li {
+    //     @include break(459px) {
+    //             font-size: 0.8em;
+    //             margin: 0 5px;
+    //         } 
+    //         @include break(767px) {
+    //                    font-size: 1em;
+    //                    margin: 0 10px;
+    //         }
+
+
+    // }
+   
+        // @include break(959px) {
+        //     width: 540px;
+        //     height: 190px;
+        //     float: left;
+        //     text-align: right;
+            // ul {
+            //     margin-top: 95px;
+            //     li {
+                   
+            //        font-size: .8em;
+            //        margin-right: 10px;
+            //     }
+            // }  
+//         }
+//     } 
+
+// }
+    
+
 

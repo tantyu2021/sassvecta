@@ -342,10 +342,6 @@ template {
   display: none;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
   margin: 0;
   font-size: 1em;
@@ -428,48 +424,119 @@ header h3 {
   padding-top: 50px;
 }
 
-#content {
-  width: 940px;
-  margin: 20px auto;
-}
-
-#content h3 {
-  color: #666;
-  font-size: 2em;
-  font-weight: 400;
-}
-
 figure {
-  width: 400px;
-  height: 190px;
-  background: url("../images/logo.png") no-repeat 0 50px;
-  float: left;
+  background-size: contain;
+  background-position: center center;
+  float: none;
+  width: inherit;
   display: block;
   margin: 0;
+  background: url("../images/logo.png") no-repeat 0 50px;
+  height: 100px;
 }
 
-footer {
-  margin: 0;
+@media (min-width: 459px) {
+  figure {
+    height: 140px;
+  }
 }
 
-ul {
-  list-style-type: none;
-  margin-top: 95px;
+@media (min-width: 459px) and (min-width: 959px) {
+  figure {
+    width: 400px;
+    height: 190px;
+    float: left;
+  }
 }
 
-ul li {
-  display: inline;
+main {
+  width: 300px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+@media (min-width: 459px) {
+  main {
+    width: 460px;
+  }
+}
+
+@media (min-width: 459px) and (min-width: 757px) {
+  main {
+    width: 768px;
+  }
+}
+
+@media (min-width: 459px) and (min-width: 959px) {
+  main {
+    width: 940px;
+  }
+}
+
+nav {
+  width: inherit;
+  height: 50px;
+  float: none;
+  text-align: center;
   font-size: 0.8em;
-  margin-right: 10px;
 }
 
-ul li a {
-  text-decoration: none;
-  letter-spacing: -0.01em;
+@media (min-width: 959px) {
+  nav {
+    width: 540px;
+    height: 190px;
+    float: left;
+    text-align: right;
+  }
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 40px !important;
+  display: block;
+  text-align: center;
+  padding-left: 10px;
+}
+
+nav ul:before, nav ul:after {
+  content: '';
+  display: table;
+}
+
+nav ul:after {
+  clear: both;
+}
+
+@media (min-width: 959px) {
+  nav ul {
+    margin-top: 95px;
+    float: right;
+  }
+}
+
+nav ul li {
+  display: inline;
+  font-size: 1em;
+  padding-right: 15px;
+}
+
+@media (min-width: 959px) {
+  nav ul li {
+    margin: 0 5px;
+    font-size: .8em;
+  }
+}
+
+nav ul li a {
   color: #E65C43;
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: -0.01rem;
 }
 
-ul li a:hover {
+nav ul li a:hover {
   color: #FFF;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -13,8 +13,17 @@ header {
     h1 {
         color:$red;
         font-weight:100;
-        font-size:4em;
+        font-size:1.5em;
         line-height:0; 
+        @include break(459px) {
+                font-size:2em;
+            @include break(767px) {
+                font-size:3em;
+            }
+            @include break(959px) {
+                font-size:4em;
+            }
+        }
     }
     h2 {
         color: $white;

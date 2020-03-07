@@ -11,8 +11,8 @@ header {
         height:auto;
     }
     h1 {
-        color:$red;
-        font-weight:100;
+        //color:$red;
+        //font-weight:100;
         font-size:1.5em;
         line-height:0; 
         @include break(459px) {
@@ -26,8 +26,8 @@ header {
         }
     }
     h2 {
-        color: $white;
-        font-weight:900;
+        //color: $white;
+        //font-weight:900;
         font-size:1.4em;
         line-height:0;
         margin-bottom:70px;
@@ -42,9 +42,9 @@ header {
     }
     }
     h3 {
-        //color: $white;
-        color: $grey;
-        font-weight:400;
+        // (?)color: $white;
+        //color: $grey;
+        //font-weight:400;
         font-size:1em;
         line-height:0;
         margin-bottom:50px;
@@ -52,7 +52,7 @@ header {
             font-size:1.5em;
         @include break(767px) {
             font-size:2em;
-            //color: $grey;
+            // (?)color: $grey;
         }
     }
     }
@@ -81,6 +81,16 @@ header {
 }
 }
 
-
+header img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 80px;
+    @include break(459px) {
+        margin-bottom: 100px;   
+    @include break(767px) {
+        margin-bottom: 0;
+    }
+}
+}
 
 

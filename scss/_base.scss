@@ -13,17 +13,28 @@
   
   //1.create list of values for looping through lists with @for
   $heading-colors: $red, $white, $grey;
+  // $heading-colorsSm: $red, $white, $white;
+  $headingFontWeight: $oneH, $nineH, $fourH;
 
   h1, h2, h3 {
       font-family: Roboto, sans-serif;
   }
-//3. looping through the list. # represents the item
+//2. looping through the list. (# represents the item)
 @for $item from 1 through length($heading-colors) {
   h#{$item} {
-    color: nth($heading-colors, $item);
+    color: nth($heading-colorsSm, $item);
+  //   @include break(459px) {
+  //     font-weight: nth($heading-colors, $item);
+  // }
   }
 }
-  body {
-    width: 80%;
-    margin: 0 auto;
+//3. looping through the list - font-weight
+@for $item from 1 through length($headingFontWeight) {
+  h#{$item} {
+    font-weight: nth($headingFontWeight, $item);
   }
+}
+  // body {
+  //   width: 80%;
+  //   margin: 0 auto;
+  // }

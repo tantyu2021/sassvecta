@@ -28,33 +28,57 @@ header {
     h2 {
         color: $white;
         font-weight:900;
-        font-size:2.5em;
+        font-size:1.4em;
         line-height:0;
         margin-bottom:70px;
+        @include break(459px) {
+            font-size:1em;
+        @include break(767px) {
+            font-size:1.5em;
+        }
+        @include break(959px) {
+            font-size:2.5em;
+        }
+    }
     }
     h3 {
+        //color: $white;
         color: $grey;
         font-weight:400;
-        font-size:2em;
+        font-size:1em;
         line-height:0;
         margin-bottom:50px;
+        @include break(459px) {
+            font-size:1.5em;
+        @include break(767px) {
+            font-size:2em;
+            //color: $grey;
+        }
+    }
     }
 }
 
 #headline {
-    color: $ored;
-    margin: 0 auto;
     width: 100%;
     height: 130px;
+    background: $ored;
+    margin: 0 auto;   
     text-align:center;
     h1 {
         color: $white;
         font-family: $font-body;
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         line-height: 105%;
         font-weight:100;
-        padding-top:50px;
+        padding-top:30px;
+        @include break(459px) {
+            font-size:2em;
+            padding-top:50px;   
+        @include break(767px) {
+            font-size:2.5em;
+        }
     }
+}
 }
 
 

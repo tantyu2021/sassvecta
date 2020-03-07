@@ -412,34 +412,77 @@ header h1 {
 header h2 {
   color: #FFF;
   font-weight: 900;
-  font-size: 2.5em;
+  font-size: 1.4em;
   line-height: 0;
   margin-bottom: 70px;
+}
+
+@media (min-width: 459px) {
+  header h2 {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 459px) and (min-width: 767px) {
+  header h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 459px) and (min-width: 959px) {
+  header h2 {
+    font-size: 2.5em;
+  }
 }
 
 header h3 {
   color: #666;
   font-weight: 400;
-  font-size: 2em;
+  font-size: 1em;
   line-height: 0;
   margin-bottom: 50px;
 }
 
+@media (min-width: 459px) {
+  header h3 {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 459px) and (min-width: 767px) {
+  header h3 {
+    font-size: 2em;
+  }
+}
+
 #headline {
-  color: #F25C43;
-  margin: 0 auto;
   width: 100%;
   height: 130px;
+  background: #F25C43;
+  margin: 0 auto;
   text-align: center;
 }
 
 #headline h1 {
   color: #FFF;
   font-family: Roboto, sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   line-height: 105%;
   font-weight: 100;
-  padding-top: 50px;
+  padding-top: 30px;
+}
+
+@media (min-width: 459px) {
+  #headline h1 {
+    font-size: 2em;
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 459px) and (min-width: 767px) {
+  #headline h1 {
+    font-size: 2.5em;
+  }
 }
 
 figure {

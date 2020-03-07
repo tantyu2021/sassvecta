@@ -14,7 +14,15 @@
   //1.create list of values for looping through lists with @for
   $heading-colors: $red, $white, $grey;
   // $heading-colorsSm: $red, $white, $white;
-  $headingFontWeight: $oneH, $nineH, $fourH;
+  $fontWeight: 100, 900, 400;
+  // $rg: 100;
+  // $md: 400;
+  // $bold: 900;
+//   $fontWeight:(
+//     'rg':100,
+//     'md':400,
+//     'bold':900
+// );
 
   h1, h2, h3 {
       font-family: Roboto, sans-serif;
@@ -22,16 +30,16 @@
 //2. looping through the list. (# represents the item)
 @for $item from 1 through length($heading-colors) {
   h#{$item} {
-    color: nth($heading-colorsSm, $item);
+    color: nth($heading-colors, $item);
   //   @include break(459px) {
   //     font-weight: nth($heading-colors, $item);
   // }
   }
 }
 //3. looping through the list - font-weight
-@for $item from 1 through length($headingFontWeight) {
+@for $item from 1 through length($fontWeight) {
   h#{$item} {
-    font-weight: nth($headingFontWeight, $item);
+    font-weight: nth($fontWeight, $item);
   }
 }
   // body {

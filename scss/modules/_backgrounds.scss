@@ -92,5 +92,26 @@ header img {
     }
 }
 }
+//from _mixins.scss- math operation(for imgs),media query- break
+#content {
+    margin: 20px auto;
+        width: 940px;
+    // width: 96%;
+       //@include clearfix;
+    .item {
+        width: 96%;
+        float: none;
+        margin: 0 2%;
+        background-color: green;
+    @include break(767px) {
+        
+      .item {
+          float: left;
+        }
+        @include contentItem(2, 2%);
+    
+  }
+}
+}
 
 

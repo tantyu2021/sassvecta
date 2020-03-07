@@ -20,6 +20,18 @@
 }
 
 // MATH OPERATION
+@mixin contentItem($qty, $margin) {
+        width: ((100% - (($qty - 1) * $margin )) / $qty);
+        &:nth-child(n) {
+            margin-bottom: $margin;
+            margin-right: $margin;
+        }
+        &:nth-child(#{$qty}n) {
+            margin-bottom: 0;
+            margin-right: 0;
+        }    
+    }
+    
 // @mixin imageGrid($qty, $margin) {
 //     width: ((100% - (($qty - 1) * $margin )) / $qty);
 //     &:nth-child(n) {
@@ -51,11 +63,6 @@
         }
     }
 }
-    // @if length($args) == 2 {
-    //     @media (min-width: nth($args, 1)) and
-    //            (max-width: nth($args, 2)) {
-    //         @content; 
-    //     }
-    // }
+   
 
     

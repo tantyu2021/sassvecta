@@ -367,6 +367,18 @@ h3 {
   color: #666;
 }
 
+h1 {
+  font-weight: 100;
+}
+
+h2 {
+  font-weight: 900;
+}
+
+h3 {
+  font-weight: 400;
+}
+
 header {
   width: inherit;
   clear: both;
@@ -380,8 +392,6 @@ header img {
 }
 
 header h1 {
-  color: #E65C43;
-  font-weight: 100;
   font-size: 1.5em;
   line-height: 0;
 }
@@ -405,8 +415,6 @@ header h1 {
 }
 
 header h2 {
-  color: #FFF;
-  font-weight: 900;
   font-size: 1.4em;
   line-height: 0;
   margin-bottom: 70px;
@@ -431,8 +439,6 @@ header h2 {
 }
 
 header h3 {
-  color: #666;
-  font-weight: 400;
   font-size: 1em;
   line-height: 0;
   margin-bottom: 50px;
@@ -477,6 +483,53 @@ header h3 {
 @media (min-width: 459px) and (min-width: 767px) {
   #headline h1 {
     font-size: 2.5em;
+  }
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 80px;
+}
+
+@media (min-width: 459px) {
+  header img {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 459px) and (min-width: 767px) {
+  header img {
+    margin-bottom: 0;
+  }
+}
+
+#content {
+  margin: 20px auto;
+  width: 940px;
+}
+
+#content .item {
+  width: 96%;
+  float: none;
+  margin: 0 2%;
+  background-color: green;
+}
+
+@media (min-width: 767px) {
+  #content .item {
+    width: 49%;
+  }
+  #content .item .item {
+    float: left;
+  }
+  #content .item:nth-child(n) {
+    margin-bottom: 2%;
+    margin-right: 2%;
+  }
+  #content .item:nth-child(2n) {
+    margin-bottom: 0;
+    margin-right: 0;
   }
 }
 

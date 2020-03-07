@@ -342,6 +342,10 @@ template {
   display: none;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
   font-size: 1em;
@@ -370,40 +374,6 @@ h3 {
 body {
   width: 80%;
   margin: 0 auto;
-}
-
-.grid {
-  margin-bottom: 10px;
-}
-
-.grid:before, .grid:after {
-  content: '';
-  display: table;
-}
-
-.grid:after {
-  clear: both;
-}
-
-.grid .item {
-  float: left;
-  width: 32%;
-}
-
-.grid .item:nth-child(n) {
-  margin-bottom: 2%;
-  margin-right: 2%;
-}
-
-.grid .item:nth-child(3n) {
-  margin-bottom: 0;
-  margin-right: 0;
-}
-
-.grid img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 header {
@@ -469,8 +439,13 @@ header h3 {
   font-weight: 400;
 }
 
-main {
-  background-color: #666;
+figure {
+  width: 400px;
+  height: 190px;
+  background: url("../images/logo.png") no-repeat 0 50px;
+  float: left;
+  display: block;
+  margin: 0;
 }
 
 footer {

@@ -1,22 +1,17 @@
 
-main  {
-    background-color: $grey;
-}
-//2- header .container {
-//         width: 100%;
-// }
 
+figure  {
+    width:400px;
+    height:190px;
+    background:url('../images/logo.png') no-repeat 0 50px;
+    float:left;display:
+    block;margin:0;
+}
 footer  {
     margin: 0; //put center
 }
 
-    // .branding {
-    //     float: left;
-    //     display: none; // _mixins - break
-    //     @include break(1000px) {
-    //         display: block;
-    //     }
-    // }
+
 
     ul {
         list-style-type: none;

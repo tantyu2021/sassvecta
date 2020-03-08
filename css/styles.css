@@ -509,6 +509,11 @@ header img {
   width: 100%;
 }
 
+#content #products img {
+  float: left;
+  margin-right: 20px;
+}
+
 #content:before, #content:after {
   content: '';
   display: table;
@@ -526,7 +531,16 @@ header img {
   #content {
     width: 940px;
   }
+  #content #products {
+    width: 46%;
+    float: left;
+  }
+  #content #testimonials {
+    width: 46%;
+    float: left;
+  }
   #content .item {
+    float: left;
     width: 49.5%;
   }
   #content .item:nth-child(n) {

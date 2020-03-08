@@ -1,9 +1,6 @@
 
 @mixin backimage($image, $height) { 
     background: url($image)  no-repeat 0 50px;
-   // background-repeat: no-repeat;
-    // background-position: center center;
-    // background-size: cover;
     height: $height;
 }
 
@@ -32,17 +29,6 @@
         }    
     }
     
-// @mixin imageGrid($qty, $margin) {
-//     width: ((100% - (($qty - 1) * $margin )) / $qty);
-//     &:nth-child(n) {
-//         margin-bottom: $margin;
-//         margin-right: $margin;
-//     }
-//     &:nth-child(#{$qty}n) {
-//         margin-bottom: 0;
-//         margin-right: 0;
-//     }    
-// }
 
 // @if, @mixin ,MEDIA QUERY 
 

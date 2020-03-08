@@ -1,5 +1,4 @@
 
-
 figure  {
     //background-size: contain;
     //background-position:center;
@@ -18,17 +17,7 @@ figure  {
         }
     } 
 }
-//display: block;
- //@include clearfix;
 
-//  figure {
-//     width: 400px;
-//     height: 190px;
-//     background: url(../images/logo.png) no-repeat 0 50px;
-//     float: left;
-//     display: block;
-//     margin: 0;
-// }
 
 main {
     width: 300px;
@@ -44,15 +33,7 @@ main {
             width: 940px; 
              
         } 
-
     } 
-    
-    
-    // h1 {
-    //     color: $red;
-    //     font-size:2em;
-    //     font-weight:400;
-    // }
 }
 
 nav {
@@ -86,11 +67,9 @@ nav {
             @include break(959px) {
                 margin: 0 5px;
                 font-size: .8em;
-               // float: right;
             }
             a {
                 color: $red;
-                //cursor: pointer;
                 display: inline;
                 text-align: center;
                 text-decoration: none;
@@ -104,96 +83,3 @@ nav {
         }
     }
    
-    // ul li {
-    //     @include break(760px) {
-    //         float: right;
-    //     }
-    //     padding: 10px 5px;
-    //     @include break(959px) {
-    //         width: 540px;
-    //         height: 190px;
-    //         float: left;
-    //         text-align: right;
-    //     }
-    // }
-
-    // ul li a {
-    //     font-size: 1.3rem;
-    //     text-decoration: none;
-    //     padding: 10px 5px;
-    //     color: $red;
-
-    //     &:hover {
-    //         color: $white;
-    //     }
-    // }
-
-
-// footer & {
-//     @include break(0, 500px) {
-//         display: none;
-//     }
-//     margin-top: 20px;
-//     min-height: 200px;
-//     background-color: darken($blue, 15%);
-// }    
-
-
-
-
-// nav {
-//     margin-bottom: 40px !important;
-//     margin-top: 0;
-//     float: none;
-//     text-align: center;
-//     width: inherit;
-//     height: 50px;
-//     ul {
-//         list-style-type: none;
-//         margin-top:0;
-//         display: inline-block;
-//         li  {
-//                 text-decoration: none;
-//                 display: inline-block;
-//                 letter-spacing:-0.01em;
-//                 a{
-//                     color: $red;
-//                 &:hover {
-//                     color: $white;
-//         } 
-
-//                 } 
-//     }
-//      ul li {
-    //     @include break(459px) {
-    //             font-size: 0.8em;
-    //             margin: 0 5px;
-    //         } 
-    //         @include break(767px) {
-    //                    font-size: 1em;
-    //                    margin: 0 10px;
-    //         }
-
-
-    // }
-   
-        // @include break(959px) {
-        //     width: 540px;
-        //     height: 190px;
-        //     float: left;
-        //     text-align: right;
-            // ul {
-            //     margin-top: 95px;
-            //     li {
-                   
-            //        font-size: .8em;
-            //        margin-right: 10px;
-            //     }
-            // }  
-//         }
-//     } 
-
-// }
-    
-
-

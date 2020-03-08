@@ -509,6 +509,10 @@ header img {
   width: 100%;
 }
 
+#content h3 {
+  font-size: 2em;
+}
+
 #content #products img {
   float: left;
   margin-right: 20px;

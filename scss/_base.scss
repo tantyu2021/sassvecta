@@ -15,9 +15,7 @@
   $heading-colors: $red, $white, $grey;
   // $heading-colorsSm: $red, $white, $white;
   $fontWeight: 100, 900, 400;
-  // $rg: 100;
-  // $md: 400;
-  // $bold: 900;
+
 //   $fontWeight:(
 //     'rg':100,
 //     'md':400,
@@ -42,7 +40,3 @@
     font-weight: nth($fontWeight, $item);
   }
 }
-  // body {
-  //   width: 80%;
-  //   margin: 0 auto;
-  // }

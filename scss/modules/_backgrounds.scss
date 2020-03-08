@@ -98,8 +98,8 @@ header img {
         width: 100%;
        @include clearfix;       
     .item {
-        width: 96%;
-        float: left; //none;
+        // width: 96%;
+        // float: left; //none;
         margin: 0 2%;
         //@include contentItem(1, 2%);
         //background-color: green;
@@ -107,11 +107,10 @@ header img {
     @include break(767px) {     
         width: 940px;
       .item {
-        width: 36%; 
+        // width: 46%; 
         @include contentItem(2, 1%);      
         } 
     }
-
 }
 .greybar {
     display: none;

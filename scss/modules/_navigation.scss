@@ -1,8 +1,8 @@
 
 
 figure  {
-    background-size: contain;
-    background-position:center center;
+    //background-size: contain;
+    //background-position:center;
     float:none;
     width: inherit;
     display: block;
@@ -82,7 +82,7 @@ nav {
         li {
             display: inline;
             font-size: 1em;
-            padding-right: 15px;
+            padding-right: 5px;
             @include break(959px) {
                 margin: 0 5px;
                 font-size: .8em;
@@ -93,7 +93,6 @@ nav {
                 //cursor: pointer;
                 display: inline;
                 text-align: center;
-                //font-size: 1.3rem;
                 text-decoration: none;
                 //padding: 10px 5px;
                 letter-spacing: -0.01rem;       

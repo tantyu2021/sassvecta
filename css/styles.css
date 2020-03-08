@@ -519,8 +519,6 @@ header img {
 }
 
 #content .item {
-  width: 96%;
-  float: left;
   margin: 0 2%;
 }
 
@@ -529,7 +527,6 @@ header img {
     width: 940px;
   }
   #content .item {
-    width: 36%;
     width: 49.5%;
   }
   #content .item:nth-child(n) {
@@ -577,8 +574,6 @@ footer p {
 }
 
 figure {
-  background-size: contain;
-  background-position: center center;
   float: none;
   width: inherit;
   display: block;
@@ -670,7 +665,7 @@ nav ul:after {
 nav ul li {
   display: inline;
   font-size: 1em;
-  padding-right: 15px;
+  padding-right: 5px;
 }
 
 @media (min-width: 959px) {

@@ -93,27 +93,6 @@ header img {
 }
 }
 
-//math from L
-.grid {
-    width: 80%;
-    margin: 10px auto;
-    @include clearfix;
-    .item {
-        float: left;
-        @include contentItem(2, 2%);
-    }
-    img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-    }
-    @include break(767px) {
-        .item {
-          @include contentItem(3, 2%);
-      }
-    }
-}
-
 
 // nesting; MATH operation (_mixins.scss)
 #content {

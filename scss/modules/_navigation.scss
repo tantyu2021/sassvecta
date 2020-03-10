@@ -1,18 +1,18 @@
 
 figure  {
-    //background-size: contain;
-    //background-position:center;
+    background-size: contain;
+    background-position:center;
     float:none;
     width: inherit;
     display: block;
     margin:0;
     @include backimage('../images/logo.png',100px);
 
-    @include break(459px) {
+    @include break(757px) {
         height:140px;
         @include break(959px) {
             width: 400px;
-            height: 190px;;
+            height: 190px;
             float: left;    
         }
     } 
@@ -62,8 +62,8 @@ nav {
         }
         li {
             display: inline;
-            font-size: 1em;
-            padding-right: 5px;
+            font-size: .8em;
+            margin-right: 10px;
             @include break(959px) {
                 margin: 0 5px;
                 font-size: .8em;

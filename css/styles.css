@@ -648,6 +648,8 @@ footer p {
 }
 
 figure {
+  background-size: contain;
+  background-position: center;
   float: none;
   width: inherit;
   display: block;
@@ -656,13 +658,13 @@ figure {
   height: 100px;
 }
 
-@media (min-width: 459px) {
+@media (min-width: 757px) {
   figure {
     height: 140px;
   }
 }
 
-@media (min-width: 459px) and (min-width: 959px) {
+@media (min-width: 757px) and (min-width: 959px) {
   figure {
     width: 400px;
     height: 190px;
@@ -738,8 +740,8 @@ nav ul:after {
 
 nav ul li {
   display: inline;
-  font-size: 1em;
-  padding-right: 5px;
+  font-size: .8em;
+  margin-right: 10px;
 }
 
 @media (min-width: 959px) {

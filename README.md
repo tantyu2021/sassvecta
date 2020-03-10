@@ -16,7 +16,7 @@ Math Operator:       _mixins.scss, _background.scss;
 List properties:     _base.scss;
 
 
-nesting - _navigation.scss, _background.scss;
+nested rules, @include break()  - _navigation.scss, _background.scss;
 
 
 looping through lists with @for: _base.scss (heading colors/font-weight);

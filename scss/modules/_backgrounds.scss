@@ -92,39 +92,90 @@ header img {
     }
 }
 }
-// _mixins.scss- math operation,- break
-#content {
-       margin: 20px auto;
-        width: 100%;
-        h3 {
-            font-size: 2em;
-        }
-         #products img {
-            float: left;
-            margin-right: 20px;
-           
-         }
-       @include clearfix;       
+
+//math from L
+.grid {
+    width: 80%;
+    margin: 10px auto;
+    @include clearfix;
     .item {
-        margin: 0 2%;
-        //@include contentItem(1, 2%);
-    }
-    @include break(767px) {     
-        width: 940px;
-       #products {
-            width: 46%;
-            float: left;
-        }
-       #testimonials  {
-            width: 46%;
-            float: left;
-        }
-      .item { 
         float: left;
-        @include contentItem(2, 1%);      
-        } 
+        @include contentItem(2, 2%);
+    }
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    @include break(767px) {
+        .item {
+          @include contentItem(3, 2%);
+      }
     }
 }
+
+
+// nesting; MATH operation (_mixins.scss)
+#content {
+    margin: 10px auto;
+    width: 90%;
+    h3 {
+        font-size: 2em;
+    }
+     #products img {
+        float: left;
+        margin-right: 20px;
+     }
+   @include clearfix;  
+    .itemBox {
+        float: left;
+        @include contentItem(1, 2%);
+    }
+    article {
+        display: block;
+        max-width: 100%;
+    }
+    @include break(767px) {
+        width: 940px;
+        .itemBox {
+          @include contentItem(2, 2%);
+      }
+    }
+} 
+
+// #content {
+//        margin: 20px auto;
+//         width: 100%;
+//         h3 {
+//             font-size: 2em;
+//         }
+//          #products img {
+//             float: left;
+//             margin-right: 20px;
+           
+//          }
+//        @include clearfix;       
+//     .item {
+//         margin: 0 2%;
+        //@include contentItem(1, 2%);
+//     }
+//     @include break(767px) {     
+//         width: 940px;
+//        #products {
+//             width: 46%;
+//             float: left;
+//         }
+//        #testimonials  {
+//             width: 46%;
+//             float: left;
+//         }
+//       .item { 
+//         float: left;
+//         @include contentItem(2, 1%);      
+//         } 
+//     }
+// }
+
 //grey line
 .greybar {
     display: none;

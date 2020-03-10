@@ -504,9 +504,58 @@ header img {
   }
 }
 
+.grid {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.grid:before, .grid:after {
+  content: '';
+  display: table;
+}
+
+.grid:after {
+  clear: both;
+}
+
+.grid .item {
+  float: left;
+  width: 49%;
+}
+
+.grid .item:nth-child(n) {
+  margin-bottom: 2%;
+  margin-right: 2%;
+}
+
+.grid .item:nth-child(2n) {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.grid img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 767px) {
+  .grid .item {
+    width: 32%;
+  }
+  .grid .item:nth-child(n) {
+    margin-bottom: 2%;
+    margin-right: 2%;
+  }
+  .grid .item:nth-child(3n) {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
+
 #content {
-  margin: 20px auto;
-  width: 100%;
+  margin: 10px auto;
+  width: 90%;
 }
 
 #content h3 {
@@ -527,31 +576,38 @@ header img {
   clear: both;
 }
 
-#content .item {
-  margin: 0 2%;
+#content .itemBox {
+  float: left;
+  width: 100%;
+}
+
+#content .itemBox:nth-child(n) {
+  margin-bottom: 2%;
+  margin-right: 2%;
+}
+
+#content .itemBox:nth-child(1n) {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+#content article {
+  display: block;
+  max-width: 100%;
 }
 
 @media (min-width: 767px) {
   #content {
     width: 940px;
   }
-  #content #products {
-    width: 46%;
-    float: left;
+  #content .itemBox {
+    width: 49%;
   }
-  #content #testimonials {
-    width: 46%;
-    float: left;
+  #content .itemBox:nth-child(n) {
+    margin-bottom: 2%;
+    margin-right: 2%;
   }
-  #content .item {
-    float: left;
-    width: 49.5%;
-  }
-  #content .item:nth-child(n) {
-    margin-bottom: 1%;
-    margin-right: 1%;
-  }
-  #content .item:nth-child(2n) {
+  #content .itemBox:nth-child(2n) {
     margin-bottom: 0;
     margin-right: 0;
   }
